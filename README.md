@@ -1,6 +1,6 @@
 # Directionality Indicator
 
-Visualization of directional information on anatomical surfaces. The project is work-in-progress. More information and functionality will follow soon.
+Visualization of directional information on anatomical surfaces. The official release can be found on [GitHub](https://github.com/NeuroanatomyAndConnectivity/DirectionalityIndicator).
 
 ## License
 
@@ -34,7 +34,7 @@ The software uses CMake to create Makefiles. So, once you downloaded the source,
 $ cd /path/to/DirectionalityIndicator
 # As we use out-of-source builds: Change to the build sub-directory
 $ cd build
-# Allow CMake to build and update the Makefiles. 
+# Allow CMake to build and update the Makefiles.
 # -> Use this command everytime you do a git pull.
 # -> CMake will complain about missing depenencies.
 $ cmake ../src
@@ -59,11 +59,11 @@ $ bin/DirectionalityIndicator
 ### Command Line Options
 
 #### Data/Project File Loading
-You can specify data files and project files on the command line. 
+You can specify data files and project files on the command line.
 
 Example:
 ```shell
-$ bin/DirectionalityIndicator "/some/path/with spaces/file2.labels" ../someProjectFile.project aMeshFile.ply  
+$ bin/DirectionalityIndicator "/some/path/with spaces/file2.labels" ../someProjectFile.project aMeshFile.ply
 ```
 
 Some things to keep in mind:
@@ -73,7 +73,7 @@ Some things to keep in mind:
  * Latter specified files override previous ones
 
 Especially the ordering of files can be very useful. Assume you have a project file. It contains all the paths to the data files needed. If you
-specify your own data file afterwards, you overwrite the one in the project file. This way, you can re-use the same project for multiple different 
+specify your own data file afterwards, you overwrite the one in the project file. This way, you can re-use the same project for multiple different
 data file combinations.
 
 #### Screenshots
@@ -82,8 +82,8 @@ The software allows you to trigger the screenshot mechanism from command line:
 $ bin/DirectionalityIndicator myProject.project --screenshot --screenshot-path="/a/path/"
 ```
 
-This starts the software, loads the project, takes the screenshots and quits. The parameter "--screenshot-path" is optional and allows to define 
-an explicit path where to store the screenshots. 
+This starts the software, loads the project, takes the screenshots and quits. The parameter "--screenshot-path" is optional and allows to define
+an explicit path where to store the screenshots.
 
 NOTE: the screenshot is done using the settings you specify in the software's screenshot-settings.
 
